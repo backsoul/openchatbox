@@ -1,0 +1,49 @@
+<div class="container">
+  <img src="assets/twitch.gif" alt="" srcset="" style="position: absolute; right: 0px; top: 0px; width: 9rem" />
+  <div style="
+      width: 98vw;
+      height: 99vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    ">
+    <div style="
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:1rem;
+      ">
+      <p style="color: white; font-weight: bold; font-size: 1.5rem;margin:0px">
+        El primer paso es generar la llave necesaria para leer tu chat.
+      </p>
+      <p style="color: #2f1c50; font-weight: 800">
+        Ir al siguiente <a href="https://twitchapps.com/tmi/" target="_blank" style="    color: white;
+        text-decoration: revert;">link</a> y copiar
+        el codigo "oauth:*********" en el campo de texto y darle a continuar.
+      </p>
+      <input type="text" placeholder="oauth:*********" style="    width: 20rem;
+        height: 2rem;
+        border-radius: 1rem;
+        border: none;
+        font-size: 1rem;
+        text-align: center;" [(ngModel)]="keyTwitch" />
+      <p>Inserte el nombre de usuario de twitch:</p>
+      <input type="text" placeholder="backsoul_" style="    width: 20rem;
+height: 2rem;
+border-radius: 1rem;
+border: none;
+font-size: 1rem;
+text-align: center;" [(ngModel)]="usernameTwitch" />
+
+      <button style="    margin: 1rem;
+      padding: 1rem 4rem;
+      border-radius: 1rem;
+      border: none;
+      background: #512b93;
+      color: white;
+      font-weight: 900;
+      font-family: 'Roboto';" class="button-next" type="submit" (click)="saveKeyTwitch()">Continuar</button>
+    </div>
+  </div>
+</div>
